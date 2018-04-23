@@ -1,0 +1,89 @@
+{
+  "name": "myApp",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/animations": "5.2.9",
+    "@angular/common": "5.2.9",
+    "@angular/compiler": "5.2.9",
+    "@angular/compiler-cli": "5.2.9",
+    "@angular/core": "5.2.9",
+    "@angular/forms": "5.2.9",
+    "@angular/http": "5.2.9",
+    "@angular/platform-browser": "5.2.9",
+    "@angular/platform-browser-dynamic": "5.2.9",
+    "@ionic-native/camera": "^4.6.0",
+    "@ionic-native/core": "^4.5.3",
+    "@ionic-native/geolocation": "^4.6.0",
+    "@ionic-native/splash-screen": "4.5.3",
+    "@ionic-native/status-bar": "4.5.3",
+    "@ionic/pro": "1.0.20",
+    "@ionic/storage": "2.1.3",
+    "@ngrx/effects": "^5.2.0",
+    "@ngrx/entity": "^5.2.0",
+    "@ngrx/store": "^5.2.0",
+    "angular-in-memory-web-api": "^0.5.4",
+    "cordova-ios": "4.5.4",
+    "cordova-plugin-camera": "^4.0.2",
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-ios-camera-permissions": "^1.2.0",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "ionic-angular": "3.9.2",
+    "ionicons": "3.0.0",
+    "rxjs": "5.5.7",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.20"
+  },
+  "devDependencies": {
+    "@angular-devkit/core": "^0.4.6",
+    "@angular-devkit/schematics": "^0.4.6",
+    "@angular/cli": "^1.7.3",
+    "@ionic/app-scripts": "3.1.8",
+    "@ngrx/schematics": "^5.2.0",
+    "@ngrx/store-devtools": "^5.2.0",
+    "jest-preset-angular": "^5.2.1",
+    "ngrx-store-freeze": "^0.2.1",
+    "typescript": "~2.6.2"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": "this app will use your camera",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "this app will access to your photo library"
+      },
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-ios-camera-permissions": {
+        "CAMERA_USAGE_DESCRIPTION": "This app needs camera access",
+        "MICROPHONE_USAGE_DESCRIPTION": "This app needs microphone access",
+        "PHOTOLIBRARY_ADD_USAGE_DESCRIPTION": "This app needs write-access to photo library",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "This app needs read/write-access photo library access"
+      }
+    },
+    "platforms": [
+      "ios"
+    ]
+  },
+  "config": {
+    "ionic_source_map_type": "source-map",
+    "ionic_webpack": "./config/webpack.config.js"
+  }
+}

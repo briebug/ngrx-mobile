@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Location
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-button type="button" (click)="getLocation()">Get Location</button>
+    <ion-item *ngIf="loading$ | async">
+      Loading...
+    </ion-item>
+    <ion-item *ngIf="error$ | async">
+      Error loading location
+    </ion-item>
+    <ion-list *ngIf="location$ | async; let location">
+      <ion-item>
+        latitude: {{location.latitude}}
+      </ion-item>
+      <ion-item>
+        longitude: {{location.longitude}}
+      </ion-item>
+      <ion-item>
+        accuracy: {{location.accuracy}}
+      </ion-item>
+      <ion-item>
+        speed: {{location.speed}}
+      </ion-item>
+    </ion-list>
+  </ion-list>
+</ion-content>

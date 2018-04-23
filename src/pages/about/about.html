@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Camera
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-button type="button" (click)="getPicture()">Get Picture</button>
+    <ion-item *ngIf="loading$ | async">
+      Loading...
+    </ion-item>
+    <ion-item *ngIf="error$ | async">
+      Error loading location
+    </ion-item>
+    <ion-list *ngIf="camera$ | async; let camera">
+      <ion-item>
+        imageData: {{camera.imageData}}
+      </ion-item>
+      <ion-item>
+        <img [src]="camera.imageData" />
+      </ion-item>
+    </ion-list>
+  </ion-list>
+</ion-content>
